@@ -1,0 +1,37 @@
+### Test PUT
+PUT http://localhost:8080/api/emp
+Content-Type: application/json
+
+{
+  "firstname": "Teresa",
+  "lastname": "Holzer",
+  "department": {
+    "id": -2
+  },
+  "manager": {
+    "id": -1
+  }
+}
+
+### TEST POST with id
+POST http://localhost:8080/api/emp/staff
+Content-Type: application/json
+
+{
+  "id": -1
+}
+
+### TEST POST with names
+POST http://localhost:8080/api/emp/staff
+Content-Type: application/json
+
+{
+  "firstname": "Marvin",
+  "lastname": "Aichinger"
+}
+
+### TEST POST with nothing
+POST http://localhost:8080/api/emp/staff
+Content-Type: application/json
+
+{ }
